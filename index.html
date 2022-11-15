@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href=".img/faviconME.png" type="image/x-icon">
+    <title>Movie APP</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__content">
+                <a class="header__logo" href="./index.html">Movie App</a>
+                <form class="form">
+                    <input type="text" class="header__search" placeholder="Search...">
+                </form>
+            </div>
+        </header>
+        <div class="content">
+            <div class="movies"></div>
+            <div class="modal"></div>
+        </div>
+    </div>
+
+<script src=".script.js"></script>
+</body>
+</html>
+
+<div class="modal__card">
+    <img class="modal__movie-backdrop" src="" alt="">
+    <h2>
+        <span class="modal__movie-title">Title</span>
+        <span class="modal__movie-release-year">Year</span>
+    </h2>
+    <ul class="modal__movie-info">
+        <div class="loader"></div>
+        <li class="modal__movie-genre">Genre</li>
+        <li class="modal__movie-runtime">Runtime</li>
+        <li>Site: <a class="modal__movie-site"></a></li>
+        <li class="modal__movie-overview">Overview</li>
+    </ul>
+    <button class="modal__button-close" type="button">Close</button>
+</div>
